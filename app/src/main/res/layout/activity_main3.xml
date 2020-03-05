@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Nuevo ingreso"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="Valor: $"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion"
+        app:layout_constraintEnd_toStartOf="@+id/valorIngreso" />
+
+    <EditText
+        android:id="@+id/valorIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:ems="10"
+        android:hint="Dinero ingresado"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="336dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/borde"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripción
+"
+        android:inputType="textMultiLine"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="@+id/regresar" />
+
+    <EditText
+        android:id="@+id/descripcion2"
+        android:layout_width="334dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/borde"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Hora y fecha
+"
+        android:inputType="textMultiLine"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/regresar" />
+
+    <Button
+        android:id="@+id/regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#16D1D1"
+        android:text="REGRESAR"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/listaI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#1680D1"
+        android:text="LISTA de ingresos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="196dp"
+        android:backgroundTint="#48D116"
+        android:text="GUARDAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
